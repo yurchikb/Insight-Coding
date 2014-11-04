@@ -40,9 +40,9 @@ I used Canopy 1.4.1 with Python 2.7 for coding. I ran the script on HP Envy lapt
 Testing Results
 
 The puzzle in file datin.txt was done instantaneously. Only stage1 processing was required. Solution is in file datout.txt.
-Puzzle in file datina.txt, datinb.txt, datinc.txt, datine.txt, datinf.txt were solved in less than a minute, often in several seconds. These puzzle were borrowed from sites ????? and ?????.
+Puzzle in file datina.txt, datinb.txt, datinc.txt, datine.txt, datinf.txt were solved in less than a minute, often in several seconds. 
 Puzzle in file datind.txt did not have a solution (according to my script). I did not verify if solution exist or not.
-Puzzle in the dating.txt (claimed to be world's hardest Sudoku at ????    ) was indeed complex and took over 4 minutes to solve.
+Puzzle in the dating.txt (claimed to be world's hardest Sudoku at http://www.telegraph.co.uk/science/science-news/9359579/Worlds-hardest-sudoku-can-you-crack-it.html) was indeed complex and took over 4 minutes to solve.
 
 Finally, you can find below the script of the python shell session to solve dateing.txt puzzle.
 
