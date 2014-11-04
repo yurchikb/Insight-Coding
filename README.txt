@@ -26,25 +26,36 @@ It solves the puzzle and writes output text file formatted like the following
 3,5,9,6,2,8,4,1,7
 8,7,1,9,4,3,5,2,6
 
-This depository contains Python script in sudoku8.py file, Readme.md file what was done, and several Sudoku puzzles used for the testing with solutions.
+This depository contains Python script in sudoku8.py file, Readme.md file what was done, 
+and several Sudoku puzzles used for the testing with solutions.
 
 Script Processing Summary
 
-I used Canopy 1.4.1 with Python 2.7 for coding. I ran the script on HP Envy laptop (eight processors with 2.4 GHz with 8 GB of memory). The script has a lot of comments that hopefully make it more readable. The script processing is done in several steps: 
+I used Canopy 1.4.1 with Python 2.7 for coding. I ran the script on HP Envy laptop (eight 
+processors with 2.4 GHz with 8 GB of memory). The script incorporate a lot of comments that hopefully 
+makes it more readable. The processing is done in several steps: 
 
 1. First, the program gets input and output file names.
-2. Then several simple tests are done to check that input is correct (numbers between 1 & 9 and no duplicates in the rows)
-3. Next is simple stage1 processing is done where possible values for all empty cells are generated and the fields with only single possible values are populated. Stage 1 processing is repeated until no more empty fields with single possible values are left. Stage 1 processing may be sufficient to resolve simple puzzles as the one presented earlier in the text.
-4. If there empty cells left after the stage1 processing, the stage2 processing tries every possible combination of values until it either finds a solution or fails to find one. I tested script with 7 different puzzles from 3 different web sites and found only one script that did not have solution.
+2. Then, several simple tests are performed to check that input is correct (numbers between 1 & 9 and no 
+duplicates in the rows).
+3. Next, simple stage 1 processing is done where all possible values for all empty cells are identified and 
+the fields with single possible values are populated. Stage 1 processing is repeated until no more empty fields 
+with single possible values are left. Stage 1 processing may be sufficient to solve simple puzzles (similar to the one 
+presented earlier in the text).
+4. If empty cells are left after the stage 1 processing, the stage2 processing tries every possible combination of values 
+until it either finds a solution or fails to find one. I tested the script with 7 different puzzles from 3 different web 
+sites and found only one puzzle that does not have solution.
 
 Testing Results
 
-The puzzle in file datin.txt was done instantaneously. Only stage1 processing was required. Solution is in file datout.txt.
-Puzzle in file datina.txt, datinb.txt, datinc.txt, datine.txt, datinf.txt were solved in less than a minute, often in several seconds. 
-Puzzle in file datind.txt did not have a solution (according to my script). I did not verify if solution exist or not.
-Puzzle in the dating.txt (claimed to be world's hardest Sudoku at http://www.telegraph.co.uk/science/science-news/9359579/Worlds-hardest-sudoku-can-you-crack-it.html) was indeed complex and took over 4 minutes to solve.
+The puzzle in file datin.txt was done instantaneously. Only stage1 processing was required. Solution is 
+in file datout.txt. The puzzle in file datina.txt, datinb.txt, datinc.txt, datine.txt, datinf.txt were solved
+in less than a minute (often in several seconds). The puzzle in file datind.txt did not have a solution (according 
+to my script). The puzzle in the dating.txt (claimed to be world's hardest Sudoku at 
+http://www.telegraph.co.uk/science/science-news/9359579/Worlds-hardest-sudoku-can-you-crack-it.html) was indeed complex
+and took more than 4 minutes to solve.
 
-Finally, you can find below the script of the python shell session to solve dateing.txt puzzle.
+Finally, you can find below the recorded python shell session for the complex puzzle stored in dating.txt.
 
 Welcome to Canopy's interactive data-analysis environment!
  with pylab-backend set to: inline
