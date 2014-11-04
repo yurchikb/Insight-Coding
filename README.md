@@ -26,11 +26,11 @@ It solves the puzzle and writes output text file formatted like the following
 3,5,9,6,2,8,4,1,7
 8,7,1,9,4,3,5,2,6
 
-This depository contains Python script in sudoku8.py file, Readme.md file what was done, and several sudoku puzzles used for the testing with solutions.
+This depository contains Python script in sudoku8.py file, Readme.md file what was done, and several Sudoku puzzles used for the testing with solutions.
 
 Script Processing Summary
 
-I used Canopy 1.4.1 with Python 2.7 for coding. I ran the script on HP Envy laptop (eight processors with 2.4 Ghz with 8 GB of memory). The script has a lot of comments that hopefully make it more readable. The script processing is done in several steps: 
+I used Canopy 1.4.1 with Python 2.7 for coding. I ran the script on HP Envy laptop (eight processors with 2.4 GHz with 8 GB of memory). The script has a lot of comments that hopefully make it more readable. The script processing is done in several steps: 
 
 1. First, the program gets input and output file names.
 2. Then several simple tests are done to check that input is correct (numbers between 1 & 9 and no duplicates in the rows)
@@ -39,10 +39,77 @@ I used Canopy 1.4.1 with Python 2.7 for coding. I ran the script on HP Envy lapt
 
 Testing Results
 
-Puzzle in file datin.txt was done instantaneously. Only stage1 processing was required. Solution is in file datout.txt.
+The puzzle in file datin.txt was done instantaneously. Only stage1 processing was required. Solution is in file datout.txt.
 Puzzle in file datina.txt, datinb.txt, datinc.txt, datine.txt, datinf.txt were solved in less than a minute, often in several seconds. These puzzle were borrowed from sites ????? and ?????.
 Puzzle in file datind.txt did not have a solution (according to my script). I did not verify if solution exist or not.
-Puzzle in the dating.txt (claimed to be wold's hardest sudoku at ????    ) was indeed complex and took over 4 mins to solve.
+Puzzle in the dating.txt (claimed to be world's hardest Sudoku at ????    ) was indeed complex and took over 4 minutes to solve.
 
-Finally, you can find below the script of the python shell session to solve dateing,txt puzzle.
+Finally, you can find below the script of the python shell session to solve dateing.txt puzzle.
 
+Welcome to Canopy's interactive data-analysis environment!
+ with pylab-backend set to: inline
+Type '?' for more information.
+
+In [1]: %run C:/Users/Yury/Desktop/Insight-Coding/sudoku8.py
+
+Enter the input file with the Sudoku puzzle: dating.txt
+Input file is dating.txt
+
+Enter the output file for the solution: datoutg.txt
+Output file is datoutg.txt
+
+Initial Board
+
+[[8 0 0 0 0 0 0 0 0]
+ [0 0 3 6 0 0 0 0 0]
+ [0 7 0 0 9 0 2 0 0]
+ [0 5 0 0 0 7 0 0 0]
+ [0 0 0 0 4 5 7 0 0]
+ [0 0 0 1 0 0 0 3 0]
+ [0 0 1 0 0 0 0 6 8]
+ [0 0 8 5 0 0 0 1 0]
+ [0 9 0 0 0 0 4 0 0]]
+
+Board after simple STAGE1 processing
+
+[[8 0 0 0 0 0 0 0 0]
+ [0 0 3 6 0 0 0 0 0]
+ [0 7 0 0 9 0 2 0 0]
+ [0 5 0 0 0 7 0 0 0]
+ [0 0 0 0 4 5 7 0 0]
+ [0 0 0 1 0 0 0 3 0]
+ [0 0 1 0 0 0 0 6 8]
+ [0 0 8 5 0 0 0 1 0]
+ [0 9 0 0 0 0 4 0 0]]
+
+Starting Main Loop.....
+
+20000  iterations completed........
+40000  iterations completed........
+60000  iterations completed........
+80000  iterations completed........
+100000  iterations completed........
+120000  iterations completed........
+140000  iterations completed........
+160000  iterations completed........
+180000  iterations completed........
+200000  iterations completed........
+220000  iterations completed........
+240000  iterations completed........
+
+Final Board
+
+[[8 1 2 7 5 3 6 4 9]
+ [9 4 3 6 8 2 1 7 5]
+ [6 7 5 4 9 1 2 8 3]
+ [1 5 4 2 3 7 8 9 6]
+ [3 6 9 8 4 5 7 2 1]
+ [2 8 7 1 6 9 5 3 4]
+ [5 2 1 9 7 4 3 6 8]
+ [4 3 8 5 2 6 9 1 7]
+ [7 9 6 3 1 8 4 5 2]]
+
+
+Execution time 249.625 secs
+
+In [2]: 
