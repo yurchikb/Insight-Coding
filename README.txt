@@ -26,35 +26,34 @@ It solves the puzzle and writes results iinto the output text file formatted lik
 3,5,9,6,2,8,4,1,7
 8,7,1,9,4,3,5,2,6
 
-This depository contains Python script (sudoku8.py file), Readme.txt file, 
-and several files Sudoku puzzles (datein?.txt files) with the corresponding solutions (dateout?.txt files)
+This depository contains Python script (sudoku8.py file), Readme.txt file, and several files Sudoku puzzles 
+(datein?.txt files) with the corresponding solutions (dateout?.txt files)
 
 Script Processing Summary
 
-I used Canopy 1.4.1 with Python 2.7 for the coding. I ran the script on HP Envy laptop (eight 
-processors with 2.4 GHz with 8 GB of memory). The script is suplemented with many comments and is, hopefully, 
-comprehensible. The processing is performed in several steps: 
+I used Canopy 1.4.1 with Python 2.7 for the coding. I ran the script on HP Envy laptop (eight processors with 2.4 GHz 
+with 8 GB of memory). The script is suplemented with many comments and is, hopefully, comprehensible. The processing is 
+performed in several steps: 
 
 Step 1. Input and output file names are entered by the user.
-Step 2. Several simple tests are performed to check if an input file is properly vonfigured (e.g., contais numbers between 1 & 9,
-does not have any duplicates numbers in rows).
+Step 2. Several simple tests are performed to check if an input file is properly vonfigured (e.g., contais numbers
+between 1 & 9, does not have any duplicates numbers in rows).
 Step 3. Simple stage 1 processing is performes by identifying all possible values for each empty board cell and 
-by populating all empty fields with a single possible value identified. Stage 1 processing may be repeated until no more empty fields 
-with a single possible value are left. Stage 1 processing may be sufficient in solving solve simple puzzles (like the one similar 
-presented earlier in the text).
-Step 4. If empty board cells are left after Stage 1 processing is completed, then the Stage 2 processing tries every possible combination of values 
-until it either finds a solution or fails to find one.
+by populating all empty fields with a single possible value identified. Stage 1 processing may be repeated until no more
+empty fields with a single possible value are left. Stage 1 processing may be sufficient in solving solve simple puzzles 
+(like the one similar to presented earlier in the text).
+Step 4. If empty board cells are left after Stage 1 processing is completed, then the Stage 2 processing tries every possible
+combination of values until it either finds a solution or fails to find one.
 
 Testing Results
 
 I tested the script with 7 different puzzles of various complexity from 3 different web sites and found solutions
 in less than a minute (often in seconds) in all cases except one.
 
-The puzzle in file datin.txt was done instantaneously. Only stage1 processing was required. Solution is 
-in file datout.txt. The puzzle in file datina.txt, datinb.txt, datinc.txt, datine.txt, datinf.txt were solved
-in less than a minute (often in several seconds). The puzzle in file datind.txt did not have a solution (according 
-to my script). It took the script couple of seconds to detect  that there is no solution. The puzzle in the dating.txt,
-claimed to be world's hardest Sudoku at 
+The puzzle in file datin.txt was done instantaneously. Only stage1 processing was required. Solution is in file datout.txt. 
+The puzzle in file datina.txt, datinb.txt, datinc.txt, datine.txt, datinf.txt were solved in less than a minute (often in 
+several seconds). The puzzle in file datind.txt did not have a solution (according to the script). It took the script couple 
+of seconds to detect that there is no solution. The puzzle in the dating.txt, claimed to be world's hardest Sudoku at 
 http://www.telegraph.co.uk/science/science-news/9359579/Worlds-hardest-sudoku-can-you-crack-it.html, was indeed complex
 and required more than 4 minutes to get solved.
 
